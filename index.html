@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSiForge | Safe DSi SD Card Assistant</title>
+    <meta
+      name="description"
+      content="DSiForge is a safe desktop app and terminal tool for checking, backing up, and organizing Nintendo DSi SD cards for homebrew setups."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="DSiForge home">
+        <span class="brand-mark">D</span>
+        <span>DSiForge</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#checks">Checks</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#terminal">Terminal</a>
+        <a class="nav-download" href="download.html">Download</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-home">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Safe DSi homebrew setup assistant</p>
+          <h1>Check your SD card before you change it.</h1>
+          <p class="lede">
+            DSiForge scans, backs up, and explains Nintendo DSi SD card setups for TWiLight Menu++, Unlaunch, and hiyaCFW without piracy tools, ROM downloaders, or automatic file moves.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="download.html">Download DSiForge</a>
+            <a class="button secondary" href="#checks">See what it checks</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Safety highlights">
+        <div><strong>Read-only</strong><span>Scan mode</span></div>
+        <div><strong>Full-card</strong><span>Backups</span></div>
+        <div><strong>TXT + JSON</strong><span>Reports</span></div>
+        <div><strong>GUI + TUI</strong><span>Interfaces</span></div>
+      </section>
+
+      <section id="checks" class="section section-tight">
+        <div class="section-kicker">
+          <p class="eyebrow">What it checks</p>
+          <h2>Built for the mistakes that actually happen.</h2>
+        </div>
+        <div class="check-board">
+          <article class="check-item good">
+            <span>01</span>
+            <h3>Setup structure</h3>
+            <p>Finds `boot.nds`, `_nds`, TWiLight Menu++ folders, config files, missing folders, and misplaced boot files.</p>
+          </article>
+          <article class="check-item warn">
+            <span>02</span>
+            <h3>Saves and ROMs</h3>
+            <p>Reports missing saves, orphaned saves, duplicate ROM names, suspicious save sizes, and zero-byte files.</p>
+          </article>
+          <article class="check-item info">
+            <span>03</span>
+            <h3>Themes</h3>
+            <p>Checks common TWiLight theme assets, reads PNG dimensions, and previews detected theme images inside the app.</p>
+          </article>
+          <article class="check-item good">
+            <span>04</span>
+            <h3>Backups</h3>
+            <p>Copies the SD folder into timestamped backup directories and tracks backup history without modifying the source.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflow" class="section app-showcase">
+        <div class="showcase-copy">
+          <p class="eyebrow">Actual app</p>
+          <h2>A quiet dashboard for careful SD card work.</h2>
+          <p>
+            The desktop UI keeps everything visible: sidebar navigation, scan actions, report panels, status messages, and real-time logs. It is designed for beginners who need confidence, not noise.
+          </p>
+          <a class="text-link" href="download.html">Go to the download page</a>
+        </div>
+        <figure class="screenshot-frame">
+          <img src="assets/dsiforgemenu.png" alt="DSiForge dashboard screenshot">
+          <figcaption>Current DSiForge dashboard.</figcaption>
+        </figure>
+      </section>
+
+      <section id="safety" class="section safety-panel">
+        <div>
+          <p class="eyebrow">Safety line</p>
+          <h2>DSiForge does not ship the things it should not ship.</h2>
+        </div>
+        <div class="safety-grid">
+          <div><span class="status ok"></span>No ROM downloads</div>
+          <div><span class="status ok"></span>No copyrighted Nintendo files</div>
+          <div><span class="status ok"></span>No firmware files</div>
+          <div><span class="status ok"></span>No exploit payload bundle</div>
+          <div><span class="status ok"></span>No automatic deletes</div>
+          <div><span class="status ok"></span>No automatic moves</div>
+        </div>
+      </section>
+
+      <section id="terminal" class="section terminal-layout">
+        <div class="section-kicker">
+          <p class="eyebrow">Terminal UI</p>
+          <h2>Prefer commands? Press 1.</h2>
+          <p>Launch DSiForge, choose Terminal UI, and run scans or backups from a friendly prompt.</p>
+        </div>
+        <div class="terminal-window">
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+          <pre><code>Choose DSiForge mode:
+  1 - Terminal UI
+  2 - Desktop GUI
+Press 1 or 2: 1
+
+dsiforge&gt; use E:\
+dsiforge&gt; scan
+dsiforge&gt; backup --output C:\Users\You\Backups --zip
+dsiforge&gt; open-report</code></pre>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow">Ready when the repo is</p>
+        <h2>One download page, ready for your GitHub link.</h2>
+        <a class="button primary" href="download.html">Open Download Page</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>DSiForge</span>
+      <span>Safe local SD card checks for DSi homebrew users.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
