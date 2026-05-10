@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Download DSiForge</title>
+    <meta name="description" content="Download and run DSiForge, a safe DSi SD card checker and backup assistant.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="DSiForge home">
+        <span class="brand-mark">D</span>
+        <span>DSiForge</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#checks">Checks</a>
+        <a href="index.html#workflow">Workflow</a>
+        <a href="index.html#terminal">Terminal</a>
+        <a class="nav-download" href="download.html">Download</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="download-hero">
+        <div>
+          <p class="eyebrow">Download</p>
+          <h1>Get DSiForge</h1>
+          <p class="lede">
+            Download the source from GitHub, then run DSiForge locally with Python. The app keeps checks read-only and backups safe.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary download-link" href="#" data-download-button>Download from GitHub</a>
+            <a class="button secondary" href="index.html">Back to Site</a>
+          </div>
+        </div>
+        <figure class="download-preview">
+          <img src="assets/dsiforgemenu.png" alt="DSiForge app dashboard">
+        </figure>
+      </section>
+
+      <section class="section install-grid">
+        <article class="install-card">
+          <span>Windows</span>
+          <h2>Run with Python</h2>
+          <p>From the DSiForge folder:</p>
+          <div class="command-card">
+            <button class="copy-button" data-copy="py dsiforge.py">Copy</button>
+            <code>py dsiforge.py</code>
+          </div>
+        </article>
+        <article class="install-card">
+          <span>Linux / macOS</span>
+          <h2>Run with Python</h2>
+          <p>From the DSiForge folder:</p>
+          <div class="command-card">
+            <button class="copy-button" data-copy="python dsiforge.py">Copy</button>
+            <code>python3 dsiforge.py</code>
+          </div>
+        </article>
+      </section>
+
+      <section class="section release-panel">
+        <div>
+          <p class="eyebrow">What the download includes</p>
+          <h2>Desktop GUI, Terminal UI, scanner, reports, and backup tools.</h2>
+        </div>
+        <ol class="release-list">
+          <li>Open `dsiforge.py`.</li>
+          <li>Press `1` for Terminal UI or `2` for Desktop GUI.</li>
+          <li>Choose your SD card root.</li>
+          <li>Scan first, then create a backup before changing anything manually.</li>
+        </ol>
+      </section>
+
+      <section class="section pending-link">
+        <h2>Repository</h2>
+        <p>
+          DSiForge is hosted at https://github.com/1moonbyte1/DSiForge.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>DSiForge</span>
+      <span>No ROMs. No firmware. No automatic deletes.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
